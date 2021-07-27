@@ -1,0 +1,2 @@
+# sliderOurPartners
+Simple working slider.
