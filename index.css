@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 77px;
+  margin: 10px auto;
+  padding-top: 15px;
+}
+
+.control-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 854px;
+  margin: 0 auto;
+}
+
+.slider {
+  /*672px + отступы по 5px*/
+  height: 57px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.slider-line {
+  width: 2196px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  transition: all ease 0.8s;
+}
+
+.arrow {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  margin: -20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.arrow-svg {
+  fill: #126fce;
+}
+
+.arrow .arrow-svg:hover,
+.arrow .arrow-svg:focus {
+  fill: #0e569f;
+
+}
+
+.arrow .arrow-svg:active {
+  fill: #b4d6f8;
+}
+
+.button-l {
+  left: -30px;
+  background-size: contain;
+}
+
+.button-r {
+  right: -30px;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .control-wrapper {
+    width: 610px;
+    /*5 шт.*/
+  }
+}
+
+@media screen and (max-width : 767px) {
+  .control-wrapper {
+    width: 488px;
+    /*4 шт.*/
+  }
+}
+
+@media screen and (max-width : 588px) {
+  .control-wrapper {
+    width: 366px;
+    /*3 шт.*/
+  }
+}
+
+@media screen and (max-width : 470px) {
+  .control-wrapper {
+    width: 244px;
+    /*2 шт.*/
+  }
+}
